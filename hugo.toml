@@ -1,3 +1,4 @@
 baseURL = 'https://nalins.github.io/getsayva-hugo/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'GetSayva HUGO'
+theme = "blowfish"

@@ -4,7 +4,7 @@ description: "Strategy. Clarity. Relationships."
 layout: "home"
 ---
 
-## Real estate doesn’t have to feel chaotic.
+## Real estate doesn’t have to feel chaotic!!! 123
 
 Most people are overwhelmed by the noise — listings, opinions, pressure, urgency.
 

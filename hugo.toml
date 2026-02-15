@@ -1,4 +1,2 @@
-baseURL = 'https://nalins.github.io/getsayva-hugo/'
-languageCode = 'en-us'
-title = 'GetSayva HUGO'
+baseURL = "https://nalins.github.io/getsayva-hugo/"
 theme = "blowfish"

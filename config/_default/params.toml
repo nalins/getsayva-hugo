@@ -17,6 +17,8 @@ enableStructuredBreadcrumbs = false
 
 replyByEmail = false
 
+customCSS = ["css/custom.css"]
+
 # mainSections = ["section1", "section2"]
 # robots = ""
 

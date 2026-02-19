@@ -1,0 +1,8 @@
+<div style="display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+  <div style="flex-shrink: 0; margin: 0 auto;">
+    <img src="{{ .Get "image" }}" alt="{{ .Get "alt" }}" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border-color: #fff; border-width: 5px;">
+  </div>
+  <div style="flex: 1; min-width: 500px;">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

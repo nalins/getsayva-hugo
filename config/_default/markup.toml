@@ -24,3 +24,8 @@
 [tableOfContents]
   startLevel = 2
   endLevel = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

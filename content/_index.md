@@ -3,7 +3,7 @@ title: "Nalin Sharma"
 description: "Toronto Real Estate"
 ---
 
-{{< profile image="/images/nalin.jpg" alt="Nalin Sharma" >}}
+{{< profile image="images/nalin.jpg" alt="Nalin Sharma" >}}
 ## Honest advice. No pressure.
 
 The Toronto market is full of noise, urgency, and pressure. My job is to slow things down.

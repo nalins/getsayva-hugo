@@ -1,0 +1,10 @@
+{{/* layouts/shortcodes/pinned-review.html */}}
+
+{{ $config := site.Data.reviews_config }}
+{{ $pinnedID := $config.pinned_id }}
+
+{{ range site.Data.reviews.reviews }}
+  {{ if hasSuffix .name $pinnedID }}
+    {{ partial "review-card.html" . }}
+  {{ end }}
+{{ end }}

@@ -8,8 +8,10 @@ description: "Toronto Real Estate"
 
 The Toronto market runs on urgency. I try to slow things down. 
 
-Before you make any decisions, we get clear on what you actually want — your finances, your timeline, what success would feel like a year from now. I'll tell you when something's not right. I'll point out the issues other agents might ignore. 
+Before you make any decisions, we get clear on what you actually want — your numbers, your timeline, and what success would feel like a year from now. I'll point out the issues other agents might ignore. So you'll know when something's not right. 
 
 Clients often tell me the process felt calmer than they expected. That's the point.
 
 {{< /profile >}}
+
+{{< pinned-review >}}

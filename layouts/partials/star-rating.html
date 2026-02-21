@@ -1,0 +1,3 @@
+{{/* partials/star-rating.html */}}
+{{ $r := .starRating }}
+<span class="star-rating">{{ if eq $r "FIVE" }}★★★★★{{ else if eq $r "FOUR" }}★★★★☆{{ else if eq $r "THREE" }}★★★☆☆{{ else if eq $r "TWO" }}★★☆☆☆{{ else }}★☆☆☆☆{{ end }}</span>

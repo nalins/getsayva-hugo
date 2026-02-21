@@ -1,0 +1,13 @@
+{{/* partials/review-card.html */}}
+{{/* Accepts a single review object from data/reviews.json */}}
+
+<div class="review-card">
+  <div class="review-header">
+    <span class="reviewer-name">{{ .reviewer.displayName }}</span>
+    {{ partial "star-rating.html" . }}
+  </div>
+  <p class="review-comment">{{ .comment }}</p>
+  <time class="review-date" datetime="{{ .createTime }}">
+    {{ dateFormat "January 2006" .createTime }}
+  </time>
+</div>

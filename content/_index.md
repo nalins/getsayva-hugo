@@ -15,3 +15,28 @@ Clients often tell me the process felt calmer than they expected. That's the poi
 {{< /profile >}}
 
 {{< pinned-review >}}
+{{< recent-reviews >}}
+
+{{< rawhtml >}}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".read-more").forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        var card = link.closest(".review-card");
+        var snippet = card.querySelector(".review-comment");
+        var full = card.querySelector(".review-full");
+        if (full.style.display === "none") {
+          snippet.style.display = "none";
+          full.style.display = "block";
+          link.textContent = "Read less";
+        } else {
+          snippet.style.display = "block";
+          full.style.display = "none";
+          link.textContent = "Read more";
+        }
+      });
+    });
+  });
+</script>
+{{< /rawhtml >}}

@@ -1,4 +1,14 @@
 # data/reviews_config.yaml
 
-pinned_id: "ChZDSUhNMG9nS0VJQ0FnSUN6eDhpTWZREAE"
-homepage_count: 3
+pinnedName: "Isabel Matwawana"
+homepage_count: 2
+homepage_reviews:
+  - "Shruthilaya Jaganathan"
+  - "Maxine Bell"
+  # - "Massimo Orsini"
+
+snippets:
+  Isabel Matwawana: "As a super anxious first time homebuyer, Nalin took the time to answer every question thoroughly and honestly and gave me exactly as much handholding as I needed."
+  Shruthilaya Jaganathan: "He put in a ton of effort upfront to really understand what I wanted and how it worked with my lifestyle."
+  Maxine Bell: "Nalin knew what it would take to be successful in our mission and ensured we were comfortable financially and emotionally every step of the way."
+  # Massimo Orsini: "He was patient, accommodating, and proactive in raising red flags that I would not have otherwise considered."

@@ -1,11 +1,12 @@
-{{/* layouts/shortcodes/pinned-review.html */}}
+{{/* layouts/shortcodes/recent-reviews.html */}}
 
 {{ $config := site.Data.reviews_config }}
-{{ $pinnedName := trim $config.pinnedName " " }}
+{{ $pinnedName := $config.pinnedName }}
+{{ $homepageReviews := $config.homepage_reviews }}
 {{ $snippets := $config.snippets }}
 
 {{ range site.Data.reviews.reviews }}
-  {{ if eq .reviewer.displayName $pinnedName }}
+  {{ if in $homepageReviews .reviewer.displayName }}
     {{ $snippet := index $snippets .reviewer.displayName }}
     {{ partial "review-card.html" (dict "review" . "snippet" $snippet) }}
   {{ end }}

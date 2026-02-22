@@ -1,13 +1,25 @@
 {{/* partials/review-card.html */}}
-{{/* Accepts a single review object from data/reviews.json */}}
+{{/* Accepts a dict with "review" and "snippet" keys */}}
+
+{{ $review := .review }}
+{{ $snippet := .snippet }}
 
 <div class="review-card">
   <div class="review-header">
-    <span class="reviewer-name">{{ .reviewer.displayName }}</span>
-    {{ partial "star-rating.html" . }}
+    <span class="reviewer-name">{{ $review.reviewer.displayName }}</span>
+    {{ partial "star-rating.html" $review }}
   </div>
-  <p class="review-comment">{{ .comment }}</p>
-  <time class="review-date" datetime="{{ .createTime }}">
-    {{ dateFormat "January 2006" .createTime }}
+
+  {{ if $snippet }}
+    <p class="review-comment">{{ $snippet }}</p>
+    <p class="review-full" style="display:none">{{ $review.comment }}</p>
+    <a class="read-more" href="#">Read more</a>
+  {{ else }}
+    <p class="review-comment">{{ $review.comment }}</p>
+  {{ end }}
+
+  <time class="review-date" datetime="{{ $review.createTime }}">
+    {{ dateFormat "January 2006" $review.createTime }}
   </time>
+
 </div>

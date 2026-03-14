@@ -67,7 +67,7 @@ body {
 }
 
 .star-rating {
-  color: #2D5016;
+  color: #E8612A;
   letter-spacing: 0.05em;
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 .pinned-stars {
-  color: var(--color-accent, #2D5016);
+  color: var(--color-accent, #E8612A);
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
   letter-spacing: 0.05em;
@@ -177,7 +177,7 @@ body {
 }
 
 .compact-stars {
-  color: var(--color-accent, #2D5016);
+  color: var(--color-accent, #E8612A);
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
   letter-spacing: 0.04em;

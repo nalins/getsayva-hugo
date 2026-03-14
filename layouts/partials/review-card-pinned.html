@@ -1,0 +1,15 @@
+{{/* partials/review-card-pinned.html */}}
+{{/* Accepts a dict with "review" and "snippet" keys */}}
+
+{{ $review := .review }}
+{{ $snippet := .snippet }}
+
+<div class="review-card review-card--pinned">
+  <div class="pinned-stars">{{ partial "star-rating.html" $review }}</div>
+  <blockquote class="pinned-quote">&#8220;{{ $snippet }}&#8221;</blockquote>
+  <div class="pinned-meta">
+    <strong>{{ $review.reviewer.displayName }}</strong>
+    <span class="pinned-meta-sep">·</span>
+    <time datetime="{{ $review.createTime }}">{{ dateFormat "January 2006" $review.createTime }}</time>
+  </div>
+</div>

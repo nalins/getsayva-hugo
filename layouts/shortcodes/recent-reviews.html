@@ -1,13 +1,21 @@
 {{/* layouts/shortcodes/recent-reviews.html */}}
 
 {{ $config := site.Data.reviews_config }}
-{{ $pinnedName := $config.pinnedName }}
 {{ $homepageReviews := $config.homepage_reviews }}
 {{ $snippets := $config.snippets }}
 
-{{ range site.Data.reviews.reviews }}
-  {{ if in $homepageReviews .reviewer.displayName }}
-    {{ $snippet := index $snippets .reviewer.displayName }}
-    {{ partial "review-card.html" (dict "review" . "snippet" $snippet) }}
-  {{ end }}
-{{ end }}
+    {{ range site.Data.reviews.reviews }}
+      {{ if in $homepageReviews .reviewer.displayName }}
+        {{ $snippet := index $snippets .reviewer.displayName }}
+        {{ partial "review-card-compact.html" (dict "review" . "snippet" $snippet) }}
+      {{ end }}
+    {{ end }}
+
+  </div>{{/* end .review-compact-grid */}}
+
+  <div class="reviews-footer">
+    <span class="reviews-count">57 reviews · 5.0 ★ on Google</span>
+    <a class="view-all" href="/reviews">Read all reviews →</a>
+  </div>
+
+</section>{{/* end .reviews-section */}}

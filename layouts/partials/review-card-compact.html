@@ -1,0 +1,15 @@
+{{/* partials/review-card-compact.html */}}
+{{/* Accepts a dict with "review" and "snippet" keys */}}
+
+{{ $review := .review }}
+{{ $snippet := .snippet }}
+
+<div class="review-card review-card--compact">
+  <div class="compact-stars">{{ partial "star-rating.html" $review }}</div>
+  <p class="compact-text">{{ $snippet }}</p>
+  <div class="compact-meta">
+    <strong>{{ $review.reviewer.displayName }}</strong>
+    <span class="compact-meta-sep">·</span>
+    <time datetime="{{ $review.createTime }}">{{ dateFormat "Jan 2006" $review.createTime }}</time>
+  </div>
+</div>

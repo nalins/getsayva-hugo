@@ -4,9 +4,17 @@
 {{ $pinnedName := trim $config.pinnedName " " }}
 {{ $snippets := $config.snippets }}
 
-{{ range site.Data.reviews.reviews }}
-  {{ if eq .reviewer.displayName $pinnedName }}
-    {{ $snippet := index $snippets .reviewer.displayName }}
-    {{ partial "review-card.html" (dict "review" . "snippet" $snippet) }}
+<section class="reviews-section">
+  <div class="reviews-section-header">
+    <span class="section-label">What clients say</span>
+    <a class="view-all" href="/reviews">All reviews →</a>
+  </div>
+
+  {{ range site.Data.reviews.reviews }}
+    {{ if eq .reviewer.displayName $pinnedName }}
+      {{ $snippet := index $snippets .reviewer.displayName }}
+      {{ partial "review-card-pinned.html" (dict "review" . "snippet" $snippet) }}
+    {{ end }}
   {{ end }}
-{{ end }}
+
+  <div class="review-compact-grid">

@@ -90,3 +90,130 @@ body {
   font-size: 0.85rem;
   opacity: 0.6;
 }
+
+/* Added piece about reviews */
+
+/* ── REVIEWS SECTION ── */
+.reviews-section {
+  padding: 3rem 0;
+  border-top: 1px solid var(--color-border, #E5E2DC);
+}
+
+.reviews-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+
+.section-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.view-all {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #6B6B66);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border, #E5E2DC);
+  padding-bottom: 1px;
+}
+.view-all:hover {
+  color: var(--color-text, #1C1C1A);
+}
+
+/* Pinned review */
+.review-card--pinned {
+  background: var(--color-card, #fff);
+  border: 1px solid var(--color-border, #E5E2DC);
+  border-radius: 6px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.pinned-stars {
+  color: var(--color-accent, #2D5016);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.pinned-quote {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.15rem;
+  line-height: 1.55;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.pinned-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #6B6B66);
+}
+.pinned-meta strong {
+  color: var(--color-text, #1C1C1A);
+  font-weight: 500;
+}
+.pinned-meta-sep {
+  margin: 0 0.4rem;
+}
+
+/* Compact review grid */
+.review-compact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-card--compact {
+  border: 1px solid var(--color-border, #E5E2DC);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-card, #fff);
+}
+
+.compact-stars {
+  color: var(--color-accent, #2D5016);
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+.compact-text {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin-bottom: 0.6rem;
+}
+
+.compact-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #6B6B66);
+}
+.compact-meta strong {
+  color: var(--color-text, #1C1C1A);
+  font-weight: 500;
+}
+.compact-meta-sep {
+  margin: 0 0.4rem;
+}
+
+/* Footer row */
+.reviews-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews-count {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #6B6B66);
+}
+
+@media (max-width: 640px) {
+  .review-compact-grid {
+    grid-template-columns: 1fr;
+  }
+}

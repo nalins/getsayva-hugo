@@ -20,6 +20,15 @@
   pageRef = "about"
   weight = 2
 
+[[main]]
+  name = "Reviews"
+  pageRef = "reviews"
+  weight = 3
+
+[[main]]
+  name = "Contact"
+  url = "#"
+  weight = 4
 
 #[[main]]
 #  name = "Blog"
